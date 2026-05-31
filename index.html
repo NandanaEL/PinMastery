@@ -220,7 +220,7 @@
             display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
             margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid var(--border-color);
         }
-        .stat-item h4 { font-size: 2rem; margin-bottom: 0.25rem; color: var(--text-main); }
+        .stat-item h4 { font-size: clamp(1.2rem, 2vw, 1.75rem); margin-bottom: 0.25rem; color: var(--text-main); white-space: nowrap; }
         .stat-item p { font-size: 0.875rem; margin: 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;}
 
         /* 3D Visual Mockup */
@@ -430,23 +430,24 @@
                 <h1 class="reveal delay-1">Stop Chasing Algorithms.<br><span class="text-gradient-animated">Start Driving Buyer Traffic.</span></h1>
                 <p class="reveal delay-2">Get the step-by-step blueprint to build a highly profitable affiliate marketing business using Pinterest—the internet's most powerful visual search engine.</p>
                 
-                <div class="reveal delay-2" style="margin-bottom: 1.5rem; margin-top: 2.5rem;">
-                    <a href="#training" class="btn-glow">Watch the Free Tutorial Now</a>
+                <div class="reveal delay-2" style="margin-bottom: 1.5rem; margin-top: 2.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                    <a href="#training" class="btn-glow">Watch Free Tutorial</a>
+                    <a href="#purchase" class="btn-outline" style="padding: 1.25rem 2rem; font-size: 1.125rem;">Purchase Full Course — ₹499</a>
                 </div>
-                <p class="reveal delay-2" style="font-size: 0.875rem; color: var(--text-muted);">Instant Access • Zero Experience Required</p>
+                <p class="reveal delay-2" style="font-size: 0.875rem; color: var(--text-muted);">Instant Access • One-time payment of ₹499 only</p>
 
                 <div class="hero-stats reveal delay-2">
                     <div class="stat-item">
-                        <h4>$2.4M+</h4>
-                        <p>Revenue Generated</p>
+                        <h4>Step-by-Step</h4>
+                        <p>Profile Setup</p>
                     </div>
                     <div class="stat-item">
-                        <h4>15,000+</h4>
-                        <p>Active Students</p>
+                        <h4>AI-Powered</h4>
+                        <p>Pin Design</p>
                     </div>
                     <div class="stat-item">
-                        <h4>4-12 Mo</h4>
-                        <p>Content Lifespan</p>
+                        <h4>High-Paying</h4>
+                        <p>Affiliate Niches</p>
                     </div>
                 </div>
             </div>
@@ -768,8 +769,11 @@
     <section class="cta-section reveal">
         <div class="container">
             <h2 style="font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 2rem; line-height: 1.1;">Ready to Build Your <br><span class="text-gradient-animated">Affiliate Empire?</span></h2>
-            <p style="max-width: 640px; margin: 0 auto 4rem auto; font-size: 1.25rem;">Stop leaving money on the table. Grab a notebook, eliminate distractions, and click below to start the free training.</p>
-            <a href="#" class="btn-glow" style="padding: 1.5rem 4rem; font-size: 1.25rem;">Watch the Free Tutorial Now</a>
+            <p style="max-width: 640px; margin: 0 auto 2rem auto; font-size: 1.25rem;">Stop leaving money on the table. Join 15,000+ students and get the complete blueprint today for just <strong>₹499</strong>.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 2rem;">
+                <a href="#purchase" class="btn-glow" style="padding: 1.5rem 4rem; font-size: 1.25rem; background: linear-gradient(135deg, #10B981, #059669); box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 15px 30px -5px rgba(16, 185, 129, 0.4);">Purchase Full Course</a>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Secure Checkout • Lifetime Access • ₹499 Only</p>
         </div>
     </section>
 
